@@ -20,7 +20,7 @@ $(function() {
                 }
             },
             title: {
-                text: 'Sensor\'s Dynamic Temperature'
+                text: 'Sensor\'s Dynamic Pressure'
             },
             subtitle: {
             text: 'Source: inteli405',
@@ -32,7 +32,7 @@ $(function() {
             },
             yAxis: [{
                 title: {
-                    text: 'Temperature'
+                    text: 'Pressure'
                 },
                 plotLines: [{
                     value: 0,
@@ -42,7 +42,7 @@ $(function() {
             },
             {
                 title: {
-                    text: '摄氏度'
+                    text: '气压'
                 },
                 plotLines: [{
                     value: 0,
@@ -101,7 +101,7 @@ $(function() {
             var series = chart.series[0];
             var series1 = chart.series[1];
             $.ajax({
-            url:"//192.168.199.187/statistic/Temperature/history",
+            url:"//192.168.199.187/statistic/Pressure/history",
             type:"GET",//这里是AJAX请求的方式
             dataType:"JSON",//如果你回发的内容是JSON格式的就用这个，否则用Text或其他
             //async: false,

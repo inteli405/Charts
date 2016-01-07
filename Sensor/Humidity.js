@@ -62,7 +62,7 @@ $(function() {
                 enabled: false
             },
             series: [{
-                name: 'Random data',
+                name: 'Sensor Data',
                 data: (function() { // generate an array of random data                             
                     var data = [],
                     time = (new Date()).getTime(),
@@ -77,7 +77,7 @@ $(function() {
                 })()
             },
             {
-                name: 'Random data',
+                name: 'Sensor Data',
                 data: (function() { // generate an array of random data                             
                     var data = [],
                     time = (new Date()).getTime(),
